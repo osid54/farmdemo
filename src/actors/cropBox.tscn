@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt6lxcq1qsmi8"]
+
+[ext_resource type="Script" path="res://src/scripts/cropBox.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cigu04dtsxcpk" path="res://src/sprites/thinFrame.png" id="2"]
+[ext_resource type="Theme" uid="uid://dbioa4r6m2qaq" path="res://src/themes/but.tres" id="3"]
+
+[node name="cropBox" type="Node2D" groups=["cropBox"]]
+script = ExtResource("1")
+
+[node name="frame" type="Sprite2D" parent="."]
+position = Vector2(128, 128)
+texture = ExtResource("2")
+
+[node name="buyButton" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 256.0
+offset_bottom = 256.0
+theme = ExtResource("3")
+
+[node name="plantButton" type="Button" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 256.0
+offset_bottom = 256.0
+theme = ExtResource("3")
+
+[connection signal="button_up" from="buyButton" to="." method="butBought"]
+[connection signal="mouse_entered" from="buyButton" to="." method="mouseEntered"]
+[connection signal="mouse_exited" from="buyButton" to="." method="mouseExit"]
+[connection signal="pressed" from="plantButton" to="." method="butPlant"]

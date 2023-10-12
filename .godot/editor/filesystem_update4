@@ -1,0 +1,7 @@
+res://default_env.tres
+res://src/actors/crop.tscn
+res://src/themes/but.tres
+res://src/scripts/crop.gd
+res://src/scenes/main.tscn
+res://src/actors/UI.tscn
+res://src/actors/inventorySquare.tscn

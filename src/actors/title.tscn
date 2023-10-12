@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://f3c62ha1affo"]
+
+[ext_resource type="FontFile" uid="uid://1h2qmeoguplg" path="res://src/fonts/AmberyGardenRegular-PKjGd.ttf" id="1_d2nsr"]
+[ext_resource type="Script" path="res://src/scripts/title.gd" id="1_k0nve"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_x2xfx"]
+font_size = 200
+
+[node name="Title" type="Label"]
+layout_direction = 2
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -138.0
+offset_bottom = 138.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 2
+theme_override_fonts/font = ExtResource("1_d2nsr")
+text = "farmdemo."
+label_settings = SubResource("LabelSettings_x2xfx")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_k0nve")

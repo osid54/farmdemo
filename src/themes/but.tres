@@ -1,0 +1,22 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://dbioa4r6m2qaq"]
+
+[ext_resource type="FontFile" uid="uid://ch1m7e8ccoarf" path="res://src/fonts/RonysiswadiArchitect1-3zjeL.ttf" id="1_q1yfg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f7ybw"]
+
+[sub_resource type="StyleBoxFlat" id="1"]
+bg_color = Color(1, 1, 1, 0.0784314)
+
+[sub_resource type="StyleBoxFlat" id="2"]
+bg_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxFlat" id="3"]
+bg_color = Color(1, 1, 1, 0.196078)
+
+[resource]
+default_font = ExtResource("1_q1yfg")
+Button/fonts/font = ExtResource("1_q1yfg")
+Button/styles/focus = SubResource("StyleBoxEmpty_f7ybw")
+Button/styles/hover = SubResource("1")
+Button/styles/normal = SubResource("2")
+Button/styles/pressed = SubResource("3")

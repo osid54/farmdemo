@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbty2tnsjrx8o"]
+
+[ext_resource type="PackedScene" path="res://src/actors/cropIcon.tscn" id="1"]
+[ext_resource type="Script" path="res://src/scripts/inventorySquare.gd" id="2"]
+
+[node name="Box" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -949.0
+offset_bottom = -500.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+alignment = 1
+script = ExtResource("2")
+
+[node name="cropIcon" parent="." instance=ExtResource("1")]
+custom_minimum_size = Vector2(40, 50)
+layout_mode = 2
+size_flags_vertical = 1
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[connection signal="pressed" from="Button" to="." method="invSlotSold"]

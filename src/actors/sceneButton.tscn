@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxekgh5xwsn6w"]
+
+[ext_resource type="Script" path="res://src/scripts/sceneButton.gd" id="1_80q3v"]
+[ext_resource type="Theme" uid="uid://c34a7j4e6j0kt" path="res://src/themes/menu.tres" id="1_eohif"]
+
+[node name="sceneButton" type="Button"]
+custom_minimum_size = Vector2(100, 0)
+offset_right = 164.0
+offset_bottom = 93.0
+theme = ExtResource("1_eohif")
+text = "play"
+script = ExtResource("1_80q3v")
+
+[connection signal="button_up" from="." to="." method="_on_button_up"]
