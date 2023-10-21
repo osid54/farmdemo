@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cbty2tnsjrx8o"]
 
-[ext_resource type="PackedScene" path="res://src/actors/cropIcon.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://bs7if6q8wnal6" path="res://src/actors/cropIcon.tscn" id="1"]
 [ext_resource type="Script" path="res://src/scripts/inventorySquare.gd" id="2"]
 
 [node name="Box" type="VBoxContainer"]
@@ -19,7 +19,6 @@ script = ExtResource("2")
 custom_minimum_size = Vector2(40, 50)
 layout_mode = 2
 size_flags_vertical = 1
-expand_mode = 1
 stretch_mode = 6
 
 [node name="Button" type="Button" parent="."]

@@ -1,6 +1,11 @@
 res://default_env.tres
 res://src/scenes/main.tscn
+res://src/themes/but.tres
 res://src/themes/UI.tres
 res://src/themes/menu.tres
 res://src/actors/UI.tscn
 res://src/actors/inventorySquare.tscn
+res://src/actors/cropArray.tscn
+res://src/actors/cropIcon.tscn
+res://src/actors/cam.tscn
+res://src/scripts/cam.gd
